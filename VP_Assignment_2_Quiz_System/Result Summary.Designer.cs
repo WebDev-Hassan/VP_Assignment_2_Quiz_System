@@ -54,7 +54,6 @@ namespace VP_Assignment_2_Quiz_System
             this.lbl_TotalMarks.Size = new System.Drawing.Size(179, 25);
             this.lbl_TotalMarks.TabIndex = 1;
             this.lbl_TotalMarks.Text = "Total Marks: 6/10";
-            this.lbl_TotalMarks.Click += new System.EventHandler(this.label2_Click);
             // 
             // lbl_WrongAnswers
             // 

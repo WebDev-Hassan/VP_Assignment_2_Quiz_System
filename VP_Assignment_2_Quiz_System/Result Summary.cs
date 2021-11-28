@@ -12,13 +12,13 @@ namespace VP_Assignment_2_Quiz_System
 {
     public partial class Result_Summary : Form
     {
-        public Result_Summary()
+        public Result_Summary(string RegNo, int Total, int Wrong, int Skipped)
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
+            lbl_ResTitle.Text = $"Result of Roll Number: {RegNo}";
+            lbl_TotalMarks.Text = $"Total Marks: {Total} / 5";
+            lbl_WrongAnswers.Text = $"Wrong Answers: {Wrong}";
+            lbl_SkippedQuestions.Text = $"Skipped Answers: {Skipped}";
 
         }
     }

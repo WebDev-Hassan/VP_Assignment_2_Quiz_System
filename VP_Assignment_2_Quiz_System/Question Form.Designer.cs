@@ -56,6 +56,7 @@ namespace VP_Assignment_2_Quiz_System
             this.btn_next.TabIndex = 1;
             this.btn_next.Text = "Next";
             this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // rb_opt1
             // 
@@ -68,7 +69,6 @@ namespace VP_Assignment_2_Quiz_System
             this.rb_opt1.TabStop = true;
             this.rb_opt1.Text = "radioButton1";
             this.rb_opt1.UseVisualStyleBackColor = true;
-            this.rb_opt1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // rb_opt2
             // 
@@ -103,6 +103,7 @@ namespace VP_Assignment_2_Quiz_System
             this.btn_skip.TabIndex = 5;
             this.btn_skip.Text = "Skip";
             this.btn_skip.UseVisualStyleBackColor = true;
+            this.btn_skip.Click += new System.EventHandler(this.btn_skip_Click);
             // 
             // Question_Form
             // 
