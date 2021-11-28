@@ -29,18 +29,18 @@ namespace VP_Assignment_2_Quiz_System
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_RegNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt_RegNo
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(287, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 31);
-            this.textBox1.TabIndex = 0;
+            this.txt_RegNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_RegNo.Location = new System.Drawing.Point(287, 138);
+            this.txt_RegNo.Name = "txt_RegNo";
+            this.txt_RegNo.Size = new System.Drawing.Size(239, 31);
+            this.txt_RegNo.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,6 +61,7 @@ namespace VP_Assignment_2_Quiz_System
             this.btn_start.TabIndex = 2;
             this.btn_start.Text = "Start Quiz";
             this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
             // MainForm
             // 
@@ -69,7 +70,7 @@ namespace VP_Assignment_2_Quiz_System
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_RegNo);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.ResumeLayout(false);
@@ -79,7 +80,7 @@ namespace VP_Assignment_2_Quiz_System
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_RegNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_start;
     }
